@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  display: flex;
+  height: 100%;
+  margin: 0;
+  flex-direction: column;
+  background-image: url(https://lp-cms-production.imgix.net/image_browser/Ho%20Chi%20Minh%20City%20skyline.jpg?auto=format&q=40&w=1920&ar=16%3A9&h=1080);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Montserrat", sans-serif;
+  user-select: none;
+}
+
+.background {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.699);
+  padding: 80px 30px 30px 30px;
+  border-radius: 20px;
+  max-width: 600px;
+  backdrop-filter: blur(20px);
+}
+
+.name {
+  font-weight: 700;
+  color: rgb(83, 63, 40);
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.quote {
+  font-size: 22px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.portrait-half {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  border: 5px solid rgba(255, 255, 255, 0.322);
+  border-top-left-radius: 80px;
+  border-top-right-radius: 80px;
+  border-bottom: 0;
+  transform: translate(-50%, -100%);
+  width: 160px;
+  height: 80px;
+  backdrop-filter: blur(8px);
+}
+
+.portrait {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  /* border: 5px solid white; */
+  transform: translate(-50%, -50%);
+  background-image: url(portrait.jpg);
+  width: 150px;
+  height: 150px;
+  background-size: cover;
+  /* background-position: center; */
+  border-radius: 50%;
+}
+
+.social-media {
+  font-weight: 700;
+  font-size: 20px;
+  text-align: center;
+}
+
+.card-wrapper {
+  padding-top: 80px;
+}
